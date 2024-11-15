@@ -56,7 +56,7 @@ Example exercise: change an attribute (such as a `className` for theming) or tex
 
 Learning objectives:
 
-- Learner will be able to write JSX that renders a different markup structure depending on the value of a variable.
+- Learner will be able to write JSX that renders a different DOM structure depending on the value of a variable.
 
 Example exercise: write a React component that displays the logged in user's name if present, or a login link otherwise.
 
