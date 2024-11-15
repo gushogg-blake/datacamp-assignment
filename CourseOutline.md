@@ -40,7 +40,7 @@ function MyComponent() {
 }
 ```
 
-### Lesson 1.2: Expressions & Conditionals
+### Lesson 1.2: Expressions
 
 > JSX can contain JavaScript expressions to display dynamic data.
 
@@ -48,27 +48,33 @@ Learning objectives:
 
 - Learner will be able to use `{...}` syntax to set JSX attributes and content based on JavaScript variables.
 
-Example exercise: change an attribute (such as a `className` for theming) or text content from hard-coded text to a variable.
+Example exercise: change an attribute (such as a `className` for theming) or text content, from a hard-coded value to a variable.
 
-1. **Conditionals**
+### Lesson 1.3: Conditionals
 
 > Introduce conditionals via ternary expressions. Give examples of both "if" (`{cond ? something : null}`) and "if-else" (`{cond ? something : somethingElse}`).
 
-Learning objective: learner will be able to create a React component that renders differently depending on the value of a variable.
+Learning objectives:
 
-Example exercise: change a login link to be 
+- Learner will be able to write JSX that renders a different markup structure depending on the value of a variable.
 
-> I was tempted to include lists in this chapter (with `map`) for completeness, but it feels like potential information overload at this stage where the goal is mostly to introduce JSX syntax and get some familiarity with it. Lists can be included in a later example.
+Example exercise: write a React component that displays the logged in user's name if present, or a login link otherwise.
 
-## Chapter 2: State & Hooks
+## Chapter 2: Updating the View
 
-So far we've used JavaScript variables to include dynamic content in our JSX. It's important to note that in React, though, changing the value of a variable after the initial render won't automatically trigger a re-render.
+> So far we've used JavaScript variables to include dynamic content in our JSX. It's important to note that in React, though, changing the value of a variable after the initial render won't automatically trigger a re-render.
+> 
+> For this to work, we need to use React's _hooks_, in particular the `useState` hook.
 
-For this to work, we need to use React's _hooks_, in particular the `useState` hook.
+### Lesson 2.1: The `useState` Hook
 
-### Lessons
+Learning objectives:
 
-1. 
+- Learner will be able to use the `useState` hook to initialise and update a piece of dynamic state within a functional React component.
+
+Example exercise: fix a simple clock component to use `useState` instead of a direct variable assignment to get it to update every second.
+
+
 
 ## Chapter 3: Components & Props
 
