@@ -78,7 +78,17 @@ Learning objectives:
 
 - Learner will be able to create two React components in separate modules, import one from the other, and render the child within the parent's JSX.
 
-Example exercise: 
+- Learner will be able to choose an appropriate boundary for components based on separation of concerns and encapsulation principles.
+
+Example exercise: refactor a component to split part of it out into a subcomponent.
+
+### Lesson 2.3: Passing props
+
+Learning objectives:
+
+- Learner will be able to pass a prop from a parent component to a child component.
+
+- Learner will be able to decide when to use a prop and when to store the data locally based on its scope.
 
 ## Chapter 2: Changing State
 
