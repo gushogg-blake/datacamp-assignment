@@ -96,7 +96,7 @@ Learning objectives:
 
 Example exercise: add a click handler to a `Button` component.
 
-## Chapter 3: Changing State
+## Chapter 3: Managing state
 
 > So far we've used JavaScript variables to include dynamic content in our JSX. It's important to note that in React, though, changing the value of a variable after the initial render won't automatically trigger a re-render.
 > 
@@ -106,16 +106,29 @@ Example exercise: add a click handler to a `Button` component.
 
 Learning objectives:
 
-- Learner will be able to use the `useState` hook to initialise and update a piece of dynamic state within a functional React component.
+- Learner will be able to use the `useState` hook to manage state within a functional React component.
+
+- Learner will be able to explain why simply reassigning a variable doesn't automatically update the DOM.
 
 Example exercise: fix a simple clock component to use `useState` instead of a direct variable assignment to get it to update every second.
 
+### Lesson 2.2: Hook rules
+
+Learning objectives:
+
+- Learner will be able to explain what context hooks can be called in and why.
+
+- Learner will be able to recognise where a hook would be out of context and factor the code out into a new component in order to make it work.
+
+Example exercise: fix a broken component by moving hook usage out of a conditional or loop and into a new subcomponent.
+
+### Lesson 2.3: Shared state
+
+Learning objectives:
+
+- Learner will be able to lift state up to share it between multiple components.
 
 
-## Chapter 3: Components & props
 
+Example exercise: 
 
-
-## Chapter 4: Handling Events
-
-Tie everything together with an interactive example
