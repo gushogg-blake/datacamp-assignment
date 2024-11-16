@@ -40,7 +40,7 @@ function MyComponent() {
 }
 ```
 
-### Lesson 1.2: Expressions
+### Lesson 1.2: JSX expressions
 
 > JSX can contain JavaScript expressions to display dynamic data.
 
@@ -50,7 +50,7 @@ Learning objectives:
 
 Example exercise: change an attribute (such as a `className` for theming) or text content, from a hard-coded value to a variable.
 
-### Lesson 1.3: Conditionals
+### Lesson 1.3: Conditional rendering
 
 > Introduce conditionals via ternary expressions. Give examples of both "if" (`{cond ? something : null}`) and "if-else" (`{cond ? something : somethingElse}`).
 
@@ -62,17 +62,9 @@ Example exercise: write JSX markup to display the logged-in user's name if prese
 
 ## Chapter 2: Components
 
-### Lesson 2.1: Writing functional components
+> I was going to start with writing a simple functional component but this is already covered by writing a function that returns JSX, so this can be explained in the intro video for this chapter.
 
-> React components can be thought of as functions accepting some state, known as _props_, and returning DOM elements.
-
-Learning objectives:
-
-- Learner will be able to write a complete functional React component, in its own module, that conforms to a given signature for props.
-
-Example exercise: write a React component for a form input with an associated `<label>`, where the text for the label is passed in as a prop.
-
-### Lesson 2.2: Nested components
+### Lesson 2.1: Nested components
 
 Learning objectives:
 
@@ -82,7 +74,7 @@ Learning objectives:
 
 Example exercise: refactor a component to split part of it out into a subcomponent.
 
-### Lesson 2.3: Passing props
+### Lesson 2.2: Passing props
 
 Learning objectives:
 
@@ -90,7 +82,21 @@ Learning objectives:
 
 - Learner will be able to decide when to use a prop and when to store the data locally based on its scope.
 
-## Chapter 2: Changing State
+Example exercise: convert a local variable to a prop.
+
+### 2.3: Handling events
+
+Learning objectives:
+
+- Learner will be able to define an event handler function and attach it to a DOM element.
+
+- Learner will be able to attach an event handler to a component as a prop.
+
+- Learner will be able to explain why event handler references don't have the `()` after the function name.
+
+Example exercise: add a click handler to a `Button` component.
+
+## Chapter 3: Changing State
 
 > So far we've used JavaScript variables to include dynamic content in our JSX. It's important to note that in React, though, changing the value of a variable after the initial render won't automatically trigger a re-render.
 > 
