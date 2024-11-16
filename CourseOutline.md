@@ -24,25 +24,9 @@ Learning objectives:
 
 - Learner will be able to fix common JSX-vs-HTML errors like trying to return multiple elements unwrapped, not closing a self-closing tag, or using reserved word attributes (`class`, `for`).
 
-Example exercise: fill in an empty function to return a `<div>` with some text inside it:
-
-```javascript
-function MyComponent() {
-	return ; // complete the function
-}
-```
-
-Solution:
-
-```javascript
-function MyComponent() {
-	return <div>This is JSX.</div>;
-}
-```
+Example exercise: update this function to return a `<div>` with some text inside it.
 
 ### Lesson 1.2: JSX expressions
-
-> JSX can contain JavaScript expressions to display dynamic data.
 
 Learning objectives:
 
@@ -52,8 +36,6 @@ Example exercise: change an attribute (such as a `className` for theming) or tex
 
 ### Lesson 1.3: Conditional rendering
 
-> Introduce conditionals via ternary expressions. Give examples of both "if" (`{cond ? something : null}`) and "if-else" (`{cond ? something : somethingElse}`).
-
 Learning objectives:
 
 - Learner will be able to write JSX that renders a different DOM structure depending on the value of a variable.
@@ -61,8 +43,6 @@ Learning objectives:
 Example exercise: write JSX markup to display the logged-in user's name if present, or a login link if the user is `null`.
 
 ## Chapter 2: Components
-
-> I was going to start with writing a simple functional component but this is already covered by writing a function that returns JSX, so this can be explained in the intro video for this chapter.
 
 ### Lesson 2.1: Using components
 
@@ -98,10 +78,6 @@ Example exercise: add a click handler to a `Button` component.
 
 ## Chapter 3: Updating State
 
-> So far we've used JavaScript variables to include dynamic content in our JSX. It's important to note that in React, though, changing the value of a variable after the initial render won't automatically trigger a re-render.
-> 
-> For this to work, we need to use React's _hooks_, in particular the `useState` hook.
-
 ### Lesson 2.1: The `useState` hook
 
 Learning objectives:
@@ -129,8 +105,6 @@ Learning objectives:
 - Learner will be able to lift state up to share it between multiple components.
 
 - Learner will be able to state an advantage and a disadvantage of prop-drilling (e.g., simple but repetitious) and when it might be more appropriate to use a solution like contexts.
-
-> Mechanics of props has already been covered in the Props lesson but worth reiterating from an architecture/dataflow perspective.
 
 Example exercise: refactor prop-drilling to use `useContext`.
 
