@@ -66,7 +66,7 @@ Learning objectives:
 
 Example exercise: add a click handler to a `Button` component.
 
-## Chapter 3: Updating State
+## Chapter 3: Lifecycle & Hooks
 
 ### Lesson 2.1: The `useState` hook
 
@@ -78,7 +78,17 @@ Learning objectives:
 
 Example exercise: fix a simple clock component to use `useState` instead of a direct variable assignment to get it to update every second.
 
-### Lesson 2.2: Hook rules
+### Lesson 2.2: The `useEffect` hook
+
+Learning objectives:
+
+- Learner will be able to use the `useEffect` hook to perform actions on component mount.
+
+- Learner will be able to explain why simply reassigning a variable doesn't automatically update the DOM.
+
+Example exercise: fix a simple clock component to use `useState` instead of a direct variable assignment to get it to update every second.
+
+### Lesson 2.3: Hook rules
 
 Learning objectives:
 
