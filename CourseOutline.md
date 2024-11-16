@@ -84,7 +84,7 @@ Learning objectives:
 
 Example exercise: convert a local variable to a prop.
 
-### 2.3: Handling events
+### Lesson 2.3: Handling events
 
 Learning objectives:
 
