@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Before starting this course, you should be comfortable creating web pages with HTML and adding interactive elements with JavaScript.
+Before starting this course, you should be comfortable creating web pages with HTML, CSS and JavaScript.
 
 > Overall course objective: Get from simple HTML pages and ad-hoc event handlers & DOM manipulation, to understanding a more structured approach---knowing React syntax (JSX) and fundamental concepts (view as a function of state; encapsulation via components)---and appreciating the reasoning behind them.
 > 
@@ -64,7 +64,7 @@ Example exercise: write JSX markup to display the logged-in user's name if prese
 
 > I was going to start with writing a simple functional component but this is already covered by writing a function that returns JSX, so this can be explained in the intro video for this chapter.
 
-### Lesson 2.1: Nested components
+### Lesson 2.1: Using components
 
 Learning objectives:
 
@@ -96,7 +96,7 @@ Learning objectives:
 
 Example exercise: add a click handler to a `Button` component.
 
-## Chapter 3: Managing state
+## Chapter 3: Updating State
 
 > So far we've used JavaScript variables to include dynamic content in our JSX. It's important to note that in React, though, changing the value of a variable after the initial render won't automatically trigger a re-render.
 > 
@@ -116,11 +116,11 @@ Example exercise: fix a simple clock component to use `useState` instead of a di
 
 Learning objectives:
 
-- Learner will be able to explain what context hooks can be called in and why.
+- Learner will be able to explain what context hooks must be called in and why.
 
 - Learner will be able to recognise where a hook would be out of context and factor the code out into a new component in order to make it work.
 
-Example exercise: fix a broken component by moving hook usage out of a conditional or loop and into a new subcomponent.
+Example exercise: what is wrong with the following code and how should it be fixed? E.g. "hook is used after `if` statement, move to separate component".
 
 ### Lesson 2.3: Shared state
 
@@ -128,7 +128,50 @@ Learning objectives:
 
 - Learner will be able to lift state up to share it between multiple components.
 
+- Learner will be able to state an advantage and a disadvantage of prop-drilling (e.g., simple but repetitious) and when it might be more appropriate to use a solution like contexts.
 
+> Mechanics of props has already been covered in the Props lesson but worth reiterating from an architecture/dataflow perspective.
 
-Example exercise: 
+Example exercise: refactor prop-drilling to use `useContext`.
 
+## Chapter 4: Tying it all together
+
+### Lesson 4.1: Working with collections
+
+Learning objectives:
+
+- Learner will be able to render items in an array using `map`.
+
+- Learner will be able to explain why keys are needed when dealing with mutable arrays (e.g., "to let React know which DOM node to associate with which object from the array").
+
+- Learner will be able to choose a suitable key and explain why (unique, stable).
+
+Example exercise: given an array of items such as blog posts, display each item in a list using a subcomponent.
+
+### Lesson 4.2: Accepting user input
+
+Learning objectives:
+
+- Learner will be able to get the value from a text field and store it in a state variable using an event handler.
+
+- Learner will be able to state an advantage and a disadvantage of one-way data binding (e.g., easy to reason about but more verbose)
+
+Example exercise: display a word count next to a text field.
+
+### Lesson 4.3: Styling
+
+Learning objectives:
+
+- Learner will be able to apply styles inline in JSX.
+
+- Learner will be able to create and import a CSS file into a React component.
+
+Example exercise: apply a drop shadow to all buttons in this app.
+
+### Lesson 4.4: Theming
+
+Learning objectives:
+
+- Learner will be able to design and implement a light/dark mode toggle.
+
+- Learner will be able to choose a maintainable method of writing CSS (inline styles, CSS modules, or direct imports) given that theming is required.
