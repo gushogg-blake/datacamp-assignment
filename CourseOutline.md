@@ -6,13 +6,7 @@ Before starting this course, you should be comfortable creating web pages with H
 
 ## Chapter 1: JSX
 
-> As the de facto standard for writing markup in React, we will be working with JSX throughout the course and it will be required to write our first component.
-> 
-> The basic building blocks of a React project are _components_, JavaScript functions that take some app state as input and produce some HTML as output. Components allow you to organise the different areas of your app into re-usable JavaScript modules, each with a clearly defined responsibility. For example, you might create components for a `Header`, `Article`, `Input`, or `Button` in your app.
-
 ### Lesson 1.1: Creating markup with JSX
-
-> JSX allows us to write an HTML-like syntax to define the markup for our React components directly within JavaScript.
 
 Learning objectives:
 
