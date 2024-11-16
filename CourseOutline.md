@@ -86,7 +86,7 @@ Learning objectives:
 
 - Learner will be able to recognise where a hook would be out of context and factor the code out into a new component in order to make it work.
 
-Example exercise: what is wrong with the following code and how should it be fixed? E.g. "hook is used after `if` statement, move to separate component".
+Example exercise: what is wrong with the following code and how should it be fixed? E.g. "hook is used after `if` statement / move to separate component".
 
 ### Lesson 2.3: Shared state
 
