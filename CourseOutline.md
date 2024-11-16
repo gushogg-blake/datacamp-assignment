@@ -4,10 +4,6 @@
 
 Before starting this course, you should be comfortable creating web pages with HTML, CSS and JavaScript.
 
-> Overall course objective: Get from simple HTML pages and ad-hoc event handlers & DOM manipulation, to understanding a more structured approach---knowing React syntax (JSX) and fundamental concepts (view as a function of state; encapsulation via components)---and appreciating the reasoning behind them.
-> 
-> By the end of the course we will be able to create a React project in which two or more components display & update some state via props, the `useState` hook, and event handlers, giving us a solid foundation from which to start building apps and learning the more advanced concepts.
-
 ## Chapter 1: JSX
 
 > As the de facto standard for writing markup in React, we will be working with JSX throughout the course and it will be required to write our first component.
