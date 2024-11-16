@@ -166,12 +166,6 @@ Learning objectives:
 
 - Learner will be able to create and import a CSS file into a React component.
 
+- Learner will be able to choose an appropriate method of including CSS where dynamic styling is required, e.g. theming.
+
 Example exercise: apply a drop shadow to all buttons in this app.
-
-### Lesson 4.4: Theming
-
-Learning objectives:
-
-- Learner will be able to design and implement a light/dark mode toggle.
-
-- Learner will be able to choose a maintainable method of writing CSS (inline styles, CSS modules, or direct imports) given that theming is required.
