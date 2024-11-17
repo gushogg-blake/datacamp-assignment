@@ -4,7 +4,7 @@ Functional components can be called multiple times throughout the app's lifetime
 
 To solve this problem, we can use the `useEffect` hook, which is designed for exactly this purpose: performing set-up (and teardown) routines just once for each instance of the component.
 
-Fix the `Clock` component below to make sure that the interval is created and destroyed exactly once for each component instance.
+Fix the `Timer` component below to make sure that the interval is created and destroyed exactly once for each component instance.
 
 ## Instructions
 
@@ -17,3 +17,11 @@ Fix the `Clock` component below to make sure that the interval is created and de
 - `useEffect` accepts a single argument -- a callback function to do any set-up work needed. We can move our timer set-up line into a `useEffect` callback.
 
 - The `useEffect` callback can return another function to do any cleanup work -- that's where we need to clear the timer interval.
+
+## Code before
+
+Functional React component for a timer counting up in seconds. Current count initialised to 0 with a `useState` hook, followed by a bare `setInterval` call to increment the count every second. Since a new `setInterval` is created on every re-render, the count starts increasing by 2, then 3, etc after each re-render.
+
+## Solution
+
+`setInterval` wrapped in `useEffect` callback, with `clearInterval` in the teardown function.
