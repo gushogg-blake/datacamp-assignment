@@ -8,6 +8,8 @@ Before starting this course, you should be comfortable creating web pages with H
 
 ### Lesson 1.1: Creating markup with JSX
 
+> JSX allows us to write an HTML-like syntax to define the markup for our React components directly within JavaScript.
+
 Learning objectives:
 
 - Learner will be able to write a JavaScript function that returns JSX.
@@ -54,7 +56,19 @@ Learning objectives:
 
 Example exercise: convert a local variable to a prop.
 
-### Lesson 2.3: Handling events
+### Lesson 2.3: Styling
+
+Learning objectives:
+
+- Learner will be able to apply styles inline in JSX.
+
+- Learner will be able to create and import a CSS file into a React component.
+
+- Learner will be able to choose an appropriate method of including CSS where dynamic styling is required, e.g. theming.
+
+Example exercise: apply a drop shadow to all buttons in this component.
+
+### Lesson 2.4: Handling events
 
 Learning objectives:
 
@@ -66,9 +80,9 @@ Learning objectives:
 
 Example exercise: add a click handler to a `Button` component.
 
-## Chapter 3: Lifecycle & Hooks
+## Chapter 3: Updating State
 
-### Lesson 2.1: The `useState` hook
+### Lesson 3.1: The `useState` hook
 
 Learning objectives:
 
@@ -76,19 +90,19 @@ Learning objectives:
 
 - Learner will be able to explain why simply reassigning a variable doesn't automatically update the DOM.
 
-Example exercise: fix a simple clock component to use `useState` instead of a direct variable assignment to get it to update every second.
+Example exercise: fix a click counter to use `useState` instead of direct variable assignment.
 
-### Lesson 2.2: The `useEffect` hook
+### Lesson 3.2: The `useEffect` hook
 
 Learning objectives:
 
 - Learner will be able to use the `useEffect` hook to perform actions on component mount.
 
-- Learner will be able to explain why simply reassigning a variable doesn't automatically update the DOM.
+- Learner will be able to explain why lifecycle hooks are needed to coordinate setup and teardown in a functional model (because the component function itself can be called at any time to re-render).
 
-Example exercise: fix a simple clock component to use `useState` instead of a direct variable assignment to get it to update every second.
+Example exercise: fix a simple `Clock` component to use `useEffect` and `useState` to set up an update interval.
 
-### Lesson 2.3: Hook rules
+### Lesson 3.3: Hook rules
 
 Learning objectives:
 
@@ -96,33 +110,9 @@ Learning objectives:
 
 - Learner will be able to recognise where a hook would be out of context and factor the code out into a new component in order to make it work.
 
-Example exercise: what is wrong with the following code and how should it be fixed? E.g. "hook is used after `if` statement / move to separate component".
+Example exercise: what is wrong with the following code and how should it be fixed? E.g. "hook is used after `if` statement, move to separate component".
 
-### Lesson 2.3: Shared state
-
-Learning objectives:
-
-- Learner will be able to lift state up to share it between multiple components.
-
-- Learner will be able to state an advantage and a disadvantage of prop-drilling (e.g., simple but repetitious) and when it might be more appropriate to use a solution like contexts.
-
-Example exercise: refactor prop-drilling to use `useContext`.
-
-## Chapter 4: Tying it all together
-
-### Lesson 4.1: Working with collections
-
-Learning objectives:
-
-- Learner will be able to render items in an array using `map`.
-
-- Learner will be able to explain why keys are needed when dealing with mutable arrays (e.g., "to let React know which DOM node to associate with which object from the array").
-
-- Learner will be able to choose a suitable key and explain why (unique, stable).
-
-Example exercise: given an array of items such as blog posts, display each item in a list using a subcomponent.
-
-### Lesson 4.2: Accepting user input
+### Lesson 3.4: Input binding
 
 Learning objectives:
 
@@ -132,14 +122,32 @@ Learning objectives:
 
 Example exercise: display a word count next to a text field.
 
-### Lesson 4.3: Styling
+## Chapter 4: Modeling Data
+
+### Lesson 4.1: Working with collections
 
 Learning objectives:
 
-- Learner will be able to apply styles inline in JSX.
+- Learner will be able to render items in an array using `map`.
 
-- Learner will be able to create and import a CSS file into a React component.
+Example exercise: given an array of items such as blog posts, display each item in a list using a subcomponent.
 
-- Learner will be able to choose an appropriate method of including CSS where dynamic styling is required, e.g. theming.
+### Lesson 4.2: Keys
 
-Example exercise: apply a drop shadow to all buttons in this app.
+Learning objectives:
+
+- Learner will be able to explain why keys are needed when dealing with mutable arrays (e.g., "to let React know which DOM node to associate with which object from the array").
+
+- Learner will be able to choose a suitable key and explain why (unique, stable).
+
+Example exercise: add a key to the blog posts list. (Note: previous lesson will have given a warning about it so it should be mentioned there.)
+
+### Lesson 4.3: Shared state
+
+Learning objectives:
+
+- Learner will be able to lift state up to share it between multiple components.
+
+- Learner will be able to state an advantage and a disadvantage of prop-drilling (e.g., simple but repetitious) and when it might be more appropriate to use a solution like contexts.
+
+Example exercise: refactor prop-drilling to use `useContext`.
