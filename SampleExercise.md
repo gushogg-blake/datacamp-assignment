@@ -20,7 +20,7 @@ Fix the `Timer` component below to make sure that the interval is created and de
 
 ## Code before
 
-Functional React component for a timer counting up in seconds. Current count initialised to 0 with a `useState` hook, followed by a bare `setInterval` call to increment the count every second. Since a new `setInterval` is created on every re-render, the count starts increasing by 2, then 3, etc after each re-render.
+Functional React component for a timer counting up in seconds. Current count initialised to 0 with a `useState` hook, followed by a bare `setInterval` call to increment the count every second. Since a new `setInterval` is created on every re-render, the count starts increasing by 2, then 3, etc after each re-render when it should just increase by 1.
 
 ## Solution
 
