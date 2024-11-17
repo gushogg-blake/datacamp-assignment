@@ -8,8 +8,6 @@ Before starting this course, you should be comfortable creating web pages with H
 
 ### Lesson 1.1: Creating markup with JSX
 
-> JSX allows us to write an HTML-like syntax to define the markup for our React components directly within JavaScript.
-
 Learning objectives:
 
 - Learner will be able to write a JavaScript function that returns JSX.
