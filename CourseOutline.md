@@ -98,7 +98,7 @@ Learning objectives:
 
 - Learner will be able to explain why lifecycle hooks are needed to coordinate setup and teardown in a functional model (because the component function itself can be called at any time to re-render).
 
-Example exercise: fix a simple `Clock` component to use `useEffect` and `useState` to set up an update interval.
+Example exercise: fix a simple `Timer` component to use `useEffect` and `useState` to set up an update interval.
 
 ### Lesson 3.3: Hook rules
 
