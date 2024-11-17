@@ -16,7 +16,7 @@ Fix the `Timer` component below to make sure that the interval is created and de
 
 - `useEffect` accepts a single argument -- a callback function to do any set-up work needed. We can move our timer set-up line into a `useEffect` callback.
 
-- The `useEffect` callback can return another function to do any cleanup work -- that's where we need to clear the timer interval.
+- The `useEffect` callback can return another function to do any cleanup work. We can use this to clear the timer interval when the component is unmounted.
 
 ## Code before
 
