@@ -2,7 +2,7 @@
 
 Functional components can be called multiple times throughout the app's lifetime in order to update the view. This means that any set-up code placed at the top level of the function would be re-run every time time the component was re-rendered!
 
-To solve this problem, we can use the `useEffect` hook, which lets us run set-up, teardown, and respond to changes in the state only when we need to.
+To solve this problem, we can use the `useEffect` hook, which lets us run set-up, teardown, and other side effects only when we need to.
 
 Fix the `Timer` component below to make sure that the interval is created and destroyed exactly once for each component instance.
 
