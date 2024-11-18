@@ -96,7 +96,11 @@ Learning objectives:
 
 - Learner will be able to use the `useEffect` hook to perform actions on component mount.
 
-- Learner will be able to explain why lifecycle hooks are needed to coordinate setup and teardown in a functional model (because the component function itself can be called at any time to re-render).
+- Learner will be able to identify variables for the dependency array, if any.
+
+- Learner will be able to identify and explain what needs to go in the clean-up function, if anything.
+
+- Learner will be able to explain why `useEffect` is needed to coordinate side effects in a functional model (because the component function itself can be called at any time to re-render).
 
 Example exercise: fix a simple `Timer` component to use `useEffect` and `useState` to set up an update interval.
 
